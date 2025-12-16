@@ -14,7 +14,7 @@ router.post('/register', async (req, res) => {
       email,
       password,
       options: {
-        data: name ? { full_name: name ,role:role } : undefined
+        data: name ? {full_name: name,role:role} : undefined
       }
     });
     if (error) {
